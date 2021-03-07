@@ -33,7 +33,7 @@ wget --no-check-certificate "https://raw.githubusercontent.com/wegare123/ssrt/ma
 wget --no-check-certificate "https://raw.githubusercontent.com/wegare123/ssrt/main/autorekonek-ssrt.sh" -O /usr/bin/autorekonek-ssrt
 cek=$(cat /etc/openwrt_r* | grep -i RELEASE | cut -d= -f2 | cut -d"'" -f2 | cut -d. -f1)
 if [ "$cek" = "19" ]; then
-wget --no-check-certificate "https://github.com/wegare123/ssrt/blob/main/shadowsocksr-libev_1-0-0-wegare_aarch64_cortex-a53.ipk?raw=true" -O ~/ssr-libev.ipk
+wget --no-check-certificate "https://github.com/wegare123/ssrt/blob/main/shadowsocksr-libev_2.5.6-5_aarch64_cortex-a53.ipk?raw=true" -O ~/ssr-libev.ipk
 elif [ "$cek" = "18" ]; then
 wget --no-check-certificate "https://github.com/wegare123/ssrt/blob/main/shadowsocksr-libev_2.5.6-5_aarch64_cortex-a53.ipk?raw=true" -O ~/ssr-libev.ipk
 else
